@@ -1,41 +1,27 @@
-import { useEffect, useState } from "react";
-import React, { Component } from "react";
-import { FaTimes } from "react-icons/fa";
-import { FaAngleLeft } from "react-icons/fa";
-import { FaAngleRight } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { FaTimes, FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Pagination from './Pagination'
+
 
 export default function McqsHandler(props) {
   const [page, pageSet] = useState(1);
   const [selected, setSelected] = useState();
-  const [start, setStart] = useState(0)
-  const [end, setEnd] = useState(5)
+  const [startIndex, setStartIndex] = useState(0)
+  const [endIndex, setEndIndex] = useState(5)
   const [mcqs, setMcqs] = useState([])
   const [action, setAction] = useState(false)
+  const [arrayLength, setArrayLength] = useState(0)
 
   useEffect(()=>{
     setMcqs(props.Mcqs)
-  },[])
+  },[mcqs])
 
-  const arr = mcqs.slice(start,end)
 
-  const nextHandler = () => {
-    if (end < mcqs.length-1) {
-      setStart(start + 5);
-      setEnd(end + 5)
-      pageSet(page + 1);
-    }
-    if (page < mcqs.length) {
-    }
-  };
-  const backHandler = () => {
-    if (start > 0) {
-      setStart(start - 5);
-      setEnd(end - 5)
-    }
-    if (page > 1) {
-      pageSet(page - 1);
-    }
-  };
+  const paginationHandler = (data) =>{
+    const {startIndex, endIndex} = data
+    setStartIndex(startIndex);
+    setEndIndex(endIndex)
+  }
 
   const toggleSelected = (id) => {
     setSelected(id);
@@ -51,7 +37,7 @@ export default function McqsHandler(props) {
       </div>
       <h2>{props.chapName}</h2>
       <div className="mcqs-box">
-        {arr.map((ques, index) => {
+        {mcqs.slice(startIndex, endIndex).map((ques, index) => {
           return (
             <div className="" key={index}>
               <h4 className="ques-text">
@@ -81,15 +67,7 @@ export default function McqsHandler(props) {
         })}
       </div>
       <div className="pagination-container">
-        <button onClick={backHandler} className="next">
-          <FaAngleLeft />
-          Prev
-        </button>
-        <button className="next">{page}</button>
-        <button onClick={nextHandler} className="next">
-          Next
-          <FaAngleRight />
-        </button>
+        <Pagination arrayLength = {mcqs.length} paginationHandler={paginationHandler} />
       </div>
     </div>
   );
