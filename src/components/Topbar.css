@@ -1,0 +1,74 @@
+.topbar {
+    background-color: #fff;
+    padding: 0 8rem;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1 p {
+    color:#fe0000;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.box1 p span {
+    color:#3c67df;
+}
+.box2 span {
+    margin-right: 1rem;
+}
+.social {
+    font-size: 2.5rem;
+    color: #3c67df;
+    cursor: pointer;
+}
+
+.status-btn {
+    font-size: 1.7rem;
+    border: none;
+    background-color:#3c67df;
+    color: #ffffffcc;
+    padding: 0.4rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease-out;
+    margin-top: .5rem;
+}
+
+.status-btn:hover {
+    color: #fff;
+    background-color: #557eed;
+}
+
+.internet-status-error {
+    color: red;
+    font-size: 1.5rem;
+}
+.internet-status-succes {
+    color: green;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width : 500px) {
+    .topbar {
+        padding: 0 1.4rem;
+    }
+    
+    .box1 p {
+        font-size: 1.5rem;
+    }
+
+    .box2 {
+        max-width: 50%;
+    }
+    .box2 span {
+        margin-right: .7rem;
+    }
+    .social {
+        font-size: 2rem;
+    }
+}

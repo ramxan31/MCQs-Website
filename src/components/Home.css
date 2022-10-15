@@ -1,0 +1,220 @@
+.hero {
+    background-image: url(../components/header-bg.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+  
+.hero .heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+}
+  
+.hero h2 {
+    color: #fff;
+    text-align: center;
+}
+  
+.hero h2 span {
+    color: #f2d70c;
+}
+
+
+.content {
+  width: 60%;
+}
+.home-content-section {
+    height: 1200px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto';
+    box-shadow: 0 0 10px 2px #ccc;
+    border-radius: .5rem;
+  }
+  .main-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mcqs-content {
+    height: 520px;
+    width: 60%;
+    background-color: #FFF;
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto';
+    box-shadow: 0 0 10px 2px #ccc;
+    border-radius: .5rem;
+  }
+
+  .home-content-section h1 {
+    color: #086161;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: .5em;
+    font-size: 2.5rem;
+  }
+  
+  .home-content-section .dw-btn a {
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 1.2em;
+    background-color: #0088FF;
+    transition: background-color .3s ease-in-out;
+    position: relative;
+  }
+  
+  .home-content-section p {
+    font-size: 1.6rem;
+    line-height: normal;
+  }
+  .home-content-section h2 {
+    font-family: 'Questrial';
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #666;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+  }
+  
+  .home-content-section .main {
+    width: 100%;
+    padding: 0.3em;
+    margin-top : 2em;
+    margin-bottom: 1.8em;
+    position: relative;
+  }
+  
+  
+  
+  .home-content-section .main .hm_sb_win {
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    vertical-align: top;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 #ccc;
+    text-align: center;
+    margin: 0.5em;
+    width: 25%;
+    height: 12rem;
+  }
+  
+  .mcqs-content .hm_sb_win a {
+    width: 100%;
+    display: inline-block;
+    background: rgb(60, 103, 223);
+    border-radius: 2rem 2rem 0 0;
+    padding: 1.2rem;
+    transition: background .3s;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+  
+  .home-content-section .hm_sb_win a {
+    width: 100%;
+    display: inline-block;
+    background: rgb(60, 103, 223);
+    border-radius: 2rem 2rem 0 0;
+    padding: 1.2rem;
+    transition: background .3s;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+@media (max-width : 500px){
+  :root {
+    font-size: 50%;
+  }
+
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+  .content {
+    width: 95%;
+    margin: auto;
+  }
+  .home-content-section {
+    height: 900px;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+  }
+  .home-content-section p {
+    margin-bottom: 0;
+  }
+  .home-content-section h1 {
+    font-size: 2rem;
+  }
+  .home-content-section h2 {
+    margin-top: 0rem;
+  }
+
+  .home-content-section .dw-btn a {
+    display: block;
+    width: 13rem;
+    font-size: 1.3rem;
+    margin: auto;
+  }
+
+  .home-content-section .main .hm_sb_win {
+    line-height: 1.2em;
+    border-radius: 1rem;
+    margin: 0.3em;
+    width: 12rem;
+    height: 12rem;
+  }
+  .home-content-section .hm_sb_win a {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+@media (min-width:501px) and (max-width : 768px){
+  :root {
+    font-size: 55%;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h2 {
+    font-size: 1.9rem;
+  }
+  .content {
+    width: 95%;
+    margin: auto;
+  }
+  .home-content-section {
+    height: 940px;
+    width: 100%;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+  }
+  .home-content-section p {
+    margin-bottom: 0;
+  }
+  .home-content-section h1 {
+    font-size: 2rem;
+  }
+  .home-content-section h2 {
+    margin-top: 0rem;
+  }
+
+  .home-content-section .dw-btn a {
+    display: block;
+    width: 14rem;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+}
