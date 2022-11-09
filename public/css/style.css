@@ -16,6 +16,15 @@ body {
   position: relative;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* ### utility classes ### */
 ul li {
   list-style: none;

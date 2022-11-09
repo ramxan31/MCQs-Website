@@ -1,5 +1,6 @@
 {
-  "name": "knowledge-online",
+  "name": "r2school",
+  "homepage": "https://r2school.rawebsolution.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

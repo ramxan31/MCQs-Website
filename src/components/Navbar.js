@@ -8,7 +8,7 @@ import ElevenDropdown from "./ElevenDropdown";
 import TwelveDropdown from "./TwelveDropdown";
 import BooksDropdown from "./BooksDropdown"
 import {FaBars,FaTimes} from 'react-icons/fa';
-import r2logo from './r2logo.png'
+import r2logo from '../assets/r2logo.png'
 
 export default function Navbar() {
   const [ninedropdown, setNineDropdown] = useState(false);

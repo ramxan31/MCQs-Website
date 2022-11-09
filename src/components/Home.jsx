@@ -8,12 +8,14 @@ export default function Home() {
     <div>
       <div className="hero">
         <div className="heading">
-          <h2>
-            Enhance Your <span>Future</span> With R2school
-          </h2>
+          <div className="">
+            <h2>Learn With Us.</h2>
+            <h2>Improve With Us.</h2>
+          </div>
+          <a href="#home" className="start-btn">Let's Start</a>
         </div>
       </div>
-      <div className="home-section">
+      <div className="home-section" id="home">
         <div className="aside">
           <div className="ebooks-btn">
             <a target="_blank" href="/books/9th/chemistry.html">
