@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -9,8 +11,9 @@
 :root {
   font-size: 62.5%;
 }
+
 body {
-  font-family: "Spartan", sans-serif;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   background-color: #e3e6f3;
   position: relative;
@@ -38,6 +41,7 @@ h1 {
   font-size: 3rem;
   color: #222;
 }
+
 h2 {
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -57,6 +61,7 @@ p {
 .section-p1 {
   padding: 4rem 8rem;
 }
+
 .section-m1 {
   margin: 4rem 0;
 }
@@ -84,6 +89,131 @@ button.normal {
 
 button.normal:hover {
   background-color: rgb(211, 201, 201);
+}
+
+
+
+/* ##### Calculator ##### */
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  margin-top: 1rem;
+}
+
+.calc-container {
+  background-color: #2f354a;
+  width: 580px;
+  width: 320px;
+  height: auto;
+  border-radius: 5px;
+  padding-bottom: .5rem;
+}
+
+.output {
+  width: 95%;
+  margin: .8rem auto;
+  padding: 2px;
+  background-color: rgb(189, 217, 221);
+  border: 3px inset;
+  text-shadow: 1px 1px 1px #8ac;
+}
+
+.operation {
+  width: 100%;
+  height: 50px;
+  color: #000;
+  font-size: 2.7rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.operation .value {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.result {
+  width: 100%;
+  height: 50px;
+  color: #555;
+  font-size: 2.7rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+
+.result .value {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.input {
+  background-color: transparent;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.input button {
+  width: 60px;
+  height: 30px;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: .3rem;
+  background-color: #009788;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fee;
+  border: 2px solid #b9b outset;
+  border-radius: .3rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.input button:hover {
+  box-shadow: inset 5px 5px 5px #cab, inset -5px -5px -5px #a98;
+  background-color: #a9a;
+}
+
+.input .calculate {
+  color: #FFF;
+  background-color: #4845fb;
+  width: 140px;
+  border-radius: 5px;
+}
+
+.input .delete {
+  color: #FFF;
+  background-color: #e05046;
+}
+
+.division,
+.multiplication,
+.subtraction,
+.addition {
+  color: #4845fb;
+}
+
+.active-angle {
+  background-color: #1d1d1d !important;
+  color: #FFF !important;
 }
 
 
@@ -121,6 +251,7 @@ button.normal:hover {
   margin: 0 auto;
   transition: all .3s ease-in-out;
 }
+
 .home-section .aside .ebooks-btn a:hover {
   background-color: #119e18;
 }
@@ -141,8 +272,9 @@ button.normal:hover {
 
 
 .home-section .aside ul li a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 .lftnavtitle {
   width: 80%;
   margin: auto;
@@ -171,6 +303,7 @@ button.normal:hover {
   justify-content: center;
   align-items: center;
 }
+
 .book-img img {
   width: 40%;
 }
@@ -183,6 +316,7 @@ button.normal:hover {
   align-items: center;
   justify-content: center;
 }
+
 .book-pdf h1 {
   font-size: 3rem;
   margin: 1rem 0 2rem;
@@ -246,28 +380,37 @@ button.normal:hover {
   box-shadow: 0 0 10px 2px #ccc;
   border-radius: .5rem;
 }
-.mathMcqsContent{
+
+.mathMcqsContent {
   height: 830px;
 }
+
 .mathMcqsContentTen {
   height: 720px;
 }
+
 .mathMcqsContentEleven {
   height: 720px;
 }
+
 .mathMcqsContentTwelve {
   height: 600px;
 }
-.phyMcqsContent, .bioMcqsContent {
+
+.phyMcqsContent,
+.bioMcqsContent {
   height: 560px !important;
 }
 
 .bioMcqsContentEleven {
-    height: 700px;
+  height: 700px;
 }
-.phyMcqsContentEleven, .phyMcqsContentTwelve {
+
+.phyMcqsContentEleven,
+.phyMcqsContentTwelve {
   height: 560px;
 }
+
 .chemMcqsContent {
   height: 480px !important;
 }
@@ -320,7 +463,8 @@ button.normal:hover {
   left: 1.2rem;
 }
 
-.mcqsContent .main .chapter .mcBtn, .qzBtn {
+.mcqsContent .main .chapter .mcBtn,
+.qzBtn {
   border: none;
   outline: none;
   color: #ffffffcc;
@@ -342,7 +486,8 @@ button.normal:hover {
 }
 
 
-.mcqsContent .main .chapter .mcBtn:hover, .qzBtn:hover {
+.mcqsContent .main .chapter .mcBtn:hover,
+.qzBtn:hover {
   background-color: rgb(78, 121, 240);
   color: #fff;
 }
@@ -388,7 +533,9 @@ button.normal:hover {
   box-shadow: 0 0 10px 2px #ccc;
   border-radius: .5rem;
 }
-.phyMcqs, .phyMcqsEleven {
+
+.phyMcqs,
+.phyMcqsEleven {
   background-color: #FFF;
   position: relative;
   top: 0;
@@ -403,12 +550,15 @@ button.normal:hover {
   border-radius: .5rem;
 }
 
-.mathMcqs h2, .phyMcqs h2 , .phyMcqsEleven h2 {
+.mathMcqs h2,
+.phyMcqs h2,
+.phyMcqsEleven h2 {
   text-align: center;
   padding-bottom: 2rem;
   font-size: 2.5rem;
   color: #555;
 }
+
 .mcqs-box {
   padding-left: 3rem;
   top: 2rem;
@@ -419,6 +569,7 @@ button.normal:hover {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 .mcqs-box button {
   text-align: center;
   margin-top: 1rem;
@@ -432,6 +583,7 @@ button.normal:hover {
   width: 11rem;
   transition: all 0.3s ease-in-out;
 }
+
 .mcqs-box button:hover {
   background-color: #1c339d;
   color: #fff;
@@ -456,10 +608,12 @@ button.normal:hover {
   font-size: 2rem;
   margin-top: 1rem;
 }
+
 .mcqs-box h4 span:first-child {
   color: #000;
   margin-right: 1rem;
 }
+
 .mcqs-box ol {
   margin-top: 1rem;
 }
@@ -530,7 +684,7 @@ button.normal:hover {
   height: 2.5rem;
   font-size: 1.4rem;
   color: #ffffffcc;
-  background-color:  #3c67df;
+  background-color: #3c67df;
   border: 1px solid #3c67df;
   border-radius: .3rem;
   padding: 0.2rem 1.3rem;
@@ -538,7 +692,9 @@ button.normal:hover {
   display: inline;
   transition: all .3s ease-in-out;
 }
-.prev:hover, .next:hover {
+
+.prev:hover,
+.next:hover {
   color: #fff;
   background-color: #4a75e9;
 }
@@ -586,6 +742,7 @@ button.normal:hover {
 .FAQ {
   margin-top: 4rem;
 }
+
 .FAQ h1 {
   text-align: center;
   text-transform: capitalize;
@@ -604,17 +761,20 @@ button.normal:hover {
   background-color: rgb(240, 227, 227);
   padding-bottom: .5rem;
 }
+
 .FAQ .question {
-  display: flex ;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: transparent;
 }
+
 .FAQ .blue {
   background: rgb(60, 103, 223);
 }
+
 .faq-icon {
   font-size: 2rem;
   color: rgb(60, 103, 223);
@@ -626,6 +786,7 @@ button.normal:hover {
   font-weight: 500;
   color: #086161;
 }
+
 .FAQ .question .white {
   color: #fff;
 }
@@ -652,19 +813,31 @@ button.normal:hover {
 .footer p {
   color: #fff;
 }
+
 .footer p a {
   color: #ff01a1;
 }
 
 /* #### Media Queries ##### */
 
-@media (max-width : 500px){
+@media (max-width : 500px) {
   :root {
     font-size: 55%;
   }
+
+  .operation {
+    height: 40px;
+  }
+  
+  
+  .result {
+    height: 40px;
+  }
+
   .home-section .aside {
     display: none;
   }
+
   .mcqsContent {
     width: 95%;
     height: 650px !important;
@@ -675,9 +848,11 @@ button.normal:hover {
   .mathMcqsContent {
     height: 1080px !important;
   }
+
   .mathMcqsContentTen {
     height: 870px !important;
   }
+
   .mathMcqsContentEleven {
     height: 870px !important;
   }
@@ -686,9 +861,11 @@ button.normal:hover {
     height: 550px !important;
   }
 
-  .phyMcqsContent, .bioMcqsContent {
+  .phyMcqsContent,
+  .bioMcqsContent {
     height: 660px !important;
   }
+
   .phyMcqsContentEleven {
     height: 760px !important;
   }
@@ -700,9 +877,11 @@ button.normal:hover {
   .chemMcqsContentEleven {
     height: 760px !important;
   }
+
   .chemMcqsContentTwelve {
     height: 970px !important;
   }
+
   .bioMcqsContentEleven {
     height: 860px !important;
   }
@@ -713,10 +892,13 @@ button.normal:hover {
     margin: 0.6rem 0rem;
     border-radius: .5rem;
   }
+
   .mcqsContent h1 {
     font-size: 2rem;
   }
-  .phyMcqs, .mathMcqs {
+
+  .phyMcqs,
+  .mathMcqs {
     position: relative;
     top: 0;
     left: 0;
@@ -733,7 +915,8 @@ button.normal:hover {
     margin: auto;
     height: 1250px;
   }
-  .mcqs-box button{
+
+  .mcqs-box button {
     width: 14rem;
     font-size: 1.5rem;
     padding: 0.5em 0em;
@@ -752,12 +935,16 @@ button.normal:hover {
     width: 50%;
     margin-top: 3rem;
   }
+
   .mission-section {
     margin-top: 3rem;
   }
-  .our-mission h1, .FAQ h1 {
+
+  .our-mission h1,
+  .FAQ h1 {
     font-size: 2rem;
   }
+
   .FAQ {
     margin-top: 2rem;
   }
@@ -766,6 +953,7 @@ button.normal:hover {
     font-size: 1.7rem;
     margin-right: 1rem;
   }
+
   .footer {
     padding: 0rem 2rem;
     flex-direction: column;
@@ -777,26 +965,32 @@ button.normal:hover {
     margin-top: -1.2rem;
   }
 }
-@media (min-width:501px) and (max-width:768px){
+
+@media (min-width:501px) and (max-width:768px) {
   :root {
     font-size: 55%;
   }
+
   .home-section .aside {
     display: none;
   }
+
   .mcqsContent {
     width: 95%;
     height: 650px !important;
     margin: auto;
   }
+
   .mcqsContent .main .chapter {
     width: 140px;
     height: 95px;
     margin: 0.6rem 0rem;
   }
+
   .mcqsContent h1 {
     font-size: 2rem;
   }
+
   .phyMcqs {
     position: relative;
     top: 0;
@@ -804,7 +998,8 @@ button.normal:hover {
     width: 95%;
     margin: q;
   }
-  .mcqs-box button{
+
+  .mcqs-box button {
     width: 14rem;
     font-size: 1.5rem;
     padding: 0.5em 0em;

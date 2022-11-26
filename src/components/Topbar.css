@@ -71,4 +71,7 @@
     .social {
         font-size: 2rem;
     }
+    .status-btn {
+        display: none;
+    }
 }

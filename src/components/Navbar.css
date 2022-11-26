@@ -23,14 +23,14 @@
 .navbar-logo {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 2rem;
+  /* width: 2rem; */
 }
 .logoImg {
-  width: 7rem;
+  width: 17rem;
 }
 
 .bars {
@@ -69,7 +69,7 @@
 .nav-item a {
   text-decoration: none;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
   padding: .6rem 1.6rem;
   border-radius: 5px;
@@ -101,7 +101,7 @@
     color: #fff;
   }
   .logoImg {
-    width: 9rem;
+    width: 15rem;
     margin-left: -3rem;
   }
   .nav-items {

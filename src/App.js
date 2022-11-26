@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './components/Home';
+import Calculator from './components/Calculator'
 import MathBookNine from './BooksComponent/MathBookNine';
 import PhyBookNine from './BooksComponent/PhyBookNine';
 import ChemBookNine from './BooksComponent/ChemBookNine';
@@ -47,6 +48,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
           <Route path="9th/mathematics" element={<MathNine />} />
           <Route path="9th/mathematics/mcqs" element={<MathNine />} />
           <Route path="9th/mathematics/quiz" element={<MathNine />} />

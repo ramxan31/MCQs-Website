@@ -130,6 +130,7 @@ export default function Navbar() {
               </li>
             );
           })}
+          <li className="nav-item"><Link to='/calculator' className="icon">Calculator</Link></li>
         </ul>
         </div>
           {show === true ? <button className="bars" onMouseLeave={showHandler} onMouseEnter={hideHandler}><FaTimes /></button> :<button className="bars" onClick={showHandler}><FaBars /></button>}
